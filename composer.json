@@ -1,0 +1,11 @@
+{
+	"name": "spakv/email-validator",
+	"description": "Email validator",
+	"type": "library",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"SPakV\\": "src/"
+		}
+	}
+}
