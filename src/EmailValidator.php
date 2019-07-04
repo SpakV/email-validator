@@ -30,6 +30,10 @@ class EmailValidator {
 	 * @return bool
 	 */
 	public static function validateMx(string $email): bool {
+		if (false === static::validate($email)) {
+			return false;
+		}
+
 		$domain = substr(strrchr($email, "@"), 1);
 
 		return checkdnsrr($domain, 'MX');
